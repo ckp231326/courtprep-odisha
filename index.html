@@ -40,7 +40,7 @@ footer{background:#0e2136;color:#dce6f0;padding:34px 0 25px}.foot{display:grid;g
 </head>
 <body>
 <div class="topbar"><div class="container"><span>Digital study materials for Odisha District Court recruitment examinations</span><span>Independent educational publication</span></div></div>
-<header><div class="container header-inner"><div class="brand">COURTPREP ODISHA<small>COMPLETE PREPARATION. CONFIDENT PERFORMANCE.</small></div><nav><a href="#books">Books</a><a href="#packages">Packages</a><a href="#about">About</a><a href="#contact">Contact</a><a class="btn" href="https://script.google.com/macros/s/AKfycbydzZ98cww_5f3c7zrUngSTwPQzcgyRvX6YE4WUwsQ1dm5sLywcEQOPbVx6LkzrMfQ0/exec" target="_blank" rel="noopener">Buy Now</a></nav></div></header>
+<header><div class="container header-inner"><div class="brand">COURTPREP ODISHA<small>COMPLETE PREPARATION. CONFIDENT PERFORMANCE.</small></div><nav><a href="#books">Books</a><a href="#packages">Packages</a><a href="#about">About</a><a href="#contact">Contact</a><a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">Buy Now</a></nav></div></header>
 <section class="hero"><div class="container"><span class="kicker">DISTRICT COURT EXAM STUDY COLLECTION</span><h1>Prepare systematically. Practise with purpose.</h1><p>Explore a focused collection of digital study materials in Arithmetic, General Knowledge and English, prepared for aspirants of Odisha District Court recruitment examinations.</p><div class="hero-actions"><a class="btn" href="#books">Explore the e-books</a><a class="btn secondary" href="#packages">View complete packages</a><a class="btn" href="https://script.google.com/macros/s/AKfycbydzZ98cww_5f3c7zrUngSTwPQzcgyRvX6YE4WUwsQ1dm5sLywcEQOPbVx6LkzrMfQ0/exec" target="_blank" rel="noopener">Open Secure Checkout</a></div></div></section>
 <main class="container">
 <div class="stats"><div class="stat"><strong>10</strong><span>Specialised e-books</span></div><div class="stat"><strong>3,075</strong><span>Combined PDF pages</span></div><div class="stat"><strong>3</strong><span>Core examination subjects</span></div></div>
@@ -53,6 +53,7 @@ footer{background:#0e2136;color:#dce6f0;padding:34px 0 25px}.foot{display:grid;g
 <footer><div class="container foot"><div><strong>COURTPREP ODISHA</strong><p>Complete Preparation. Confident Performance.<br>Independent digital study materials for Odisha District Court recruitment examination aspirants.</p></div><div><strong>Contact</strong><p><a href="mailto:ckpbpo@gmail.com">ckpbpo@gmail.com</a></p><p>Product availability and final prices will be confirmed before purchase.</p></div></div><div class="container" style="border-top:1px solid #314458;padding-top:15px;margin-top:16px;font-size:11px;color:#9eb0c1">© 2026 COURTPREP ODISHA. All rights reserved.</div></footer>
 <script>
 let catalogue=null,activeCategory="All";
+const CHECKOUT_URL="https://script.google.com/macros/s/AKfycbydzZ98cww_5f3c7zrUngSTwPQzcgyRvX6YE4WUwsQ1dm5sLywcEQOPbVx6LkzrMfQ0/exec";
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function money(n){return "₹"+Number(n).toLocaleString("en-IN")}
 function askLink(subject,body){return "mailto:ckpbpo@gmail.com?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body)}
@@ -75,7 +76,7 @@ function renderPackages(){
  const grid=document.getElementById("packageGrid");
  catalogue.packages.forEach(p=>{
   const el=document.createElement("article");el.className="card package-card"+(p.id==="PKG-ALL"?" featured":"");
-  el.innerHTML='<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+(p.id==="PKG-ALL"?"COMPLETE COLLECTION":esc(p.title.toUpperCase()))+'</span><span class="cvvol">'+p.items.length+' E-BOOKS</span></div><h3>'+esc(p.title)+'</h3><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div><div class="package-price">'+money(p.price)+'</div><div class="meta">Suggested package price · subject to confirmation</div></div><a class="btn" href="https://script.google.com/macros/s/AKfycbydzZ98cww_5f3c7zrUngSTwPQzcgyRvX6YE4WUwsQ1dm5sLywcEQOPbVx6LkzrMfQ0/exec" target="_blank" rel="noopener">Purchase Package</a></div>';
+  el.innerHTML='<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+(p.id==="PKG-ALL"?"COMPLETE COLLECTION":esc(p.title.toUpperCase()))+'</span><span class="cvvol">'+p.items.length+' E-BOOKS</span></div><h3>'+esc(p.title)+'</h3><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div><div class="package-price">'+money(p.price)+'</div><div class="meta">Suggested package price · subject to confirmation</div></div><a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">Purchase Package</a></div>';
   grid.appendChild(el);
  });
 }
