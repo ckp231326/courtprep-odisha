@@ -2,14 +2,14 @@
   "brand": "COURTPREP ODISHA",
   "tagline": "Complete Preparation. Confident Performance.",
   "currency": "INR",
-  "pricesAreProposals": true,
+  "pricesAreProposals": false,
   "products": [
     {
       "id": "ARI-01",
       "category": "Arithmetic",
       "title": "Arithmetic – Volume I: Previous Year Questions (2021–2025)",
       "pages": 204,
-      "price": 149,
+      "price": 249,
       "description": "A judgeship-wise collection of previous-year arithmetic questions for Odisha District Court recruitment examinations."
     },
     {
@@ -41,7 +41,7 @@
       "category": "English",
       "title": "English – Volume I: Previous Year Questions (2016–2025)",
       "pages": 298,
-      "price": 199,
+      "price": 299,
       "description": "Year-wise and judgeship-wise English previous-year questions."
     },
     {
@@ -57,7 +57,7 @@
       "category": "English",
       "title": "English – Volume III: Letter & Application Writing",
       "pages": 143,
-      "price": 149,
+      "price": 199,
       "description": "Previous-year question analysis, writing formats and model letters and applications."
     },
     {
@@ -65,7 +65,7 @@
       "category": "English",
       "title": "English – Volume IV: Summary Writing",
       "pages": 185,
-      "price": 149,
+      "price": 199,
       "description": "Summary-writing method, compression techniques, title-making strategy and solved question practice."
     },
     {
@@ -73,7 +73,7 @@
       "category": "English",
       "title": "English – Volume V: Odia to English Translation",
       "pages": 157,
-      "price": 149,
+      "price": 199,
       "description": "Translation framework, sentence architecture, grammar and passage practice based on district court papers."
     },
     {
@@ -81,7 +81,7 @@
       "category": "English",
       "title": "English – Volume VI: English to Odia Translation",
       "pages": 40,
-      "price": 99,
+      "price": 149,
       "description": "A focused guide to English-to-Odia translation, sentence structure and syntactic alignment."
     }
   ],
@@ -93,7 +93,7 @@
         "ARI-01",
         "ARI-02"
       ],
-      "price": 349,
+      "price": 399,
       "description": "Both Arithmetic volumes."
     },
     {
@@ -117,7 +117,7 @@
         "ENG-05",
         "ENG-06"
       ],
-      "price": 799,
+      "price": 499,
       "description": "All six English volumes: PYQs, essay, letter, summary and both translation directions."
     },
     {
@@ -135,7 +135,7 @@
         "ENG-05",
         "ENG-06"
       ],
-      "price": 1299,
+      "price": 799,
       "description": "All ten e-books across Arithmetic, General Knowledge and English."
     }
   ]
