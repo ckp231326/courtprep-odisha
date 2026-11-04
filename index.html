@@ -68,7 +68,7 @@ function renderProducts(){
  if(!list.length){grid.innerHTML='<div class="empty">No matching books found.</div>';return}
  list.forEach(p=>{
   const el=document.createElement("article");el.className="card";
-  el.innerHTML='<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+esc(coverTitle(p))+'</span><span class="cvvol">'+esc(p.id)+' · VOLUME</span></div><h3>'+esc(p.title)+'</h3><div class="meta">'+p.pages+' PDF pages · '+esc(p.category)+'</div><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div><div class="price">'+money(p.price)+'</div><div class="meta">Suggested price · subject to confirmation</div></div><a class="btn" href="https://script.google.com/macros/s/AKfycbydzZ98cww_5f3c7zrUngSTwPQzcgyRvX6YE4WUwsQ1dm5sLywcEQOPbVx6LkzrMfQ0/exec" target="_blank" rel="noopener">Buy Now</a></div>';
+  el.innerHTML='<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+esc(coverTitle(p))+'</span><span class="cvvol">'+esc(p.id)+' · VOLUME</span></div><h3>'+esc(p.title)+'</h3><div class="meta">'+p.pages+' PDF pages · '+esc(p.category)+'</div><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div><div class="price">'+money(p.price)+'</div><div class="meta">Price</div></div><a class="btn" href="https://script.google.com/macros/s/AKfycbydzZ98cww_5f3c7zrUngSTwPQzcgyRvX6YE4WUwsQ1dm5sLywcEQOPbVx6LkzrMfQ0/exec" target="_blank" rel="noopener">Buy Now</a></div>';
   grid.appendChild(el);
  });
 }
@@ -76,7 +76,7 @@ function renderPackages(){
  const grid=document.getElementById("packageGrid");
  catalogue.packages.forEach(p=>{
   const el=document.createElement("article");el.className="card package-card"+(p.id==="PKG-ALL"?" featured":"");
-  el.innerHTML='<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+(p.id==="PKG-ALL"?"COMPLETE COLLECTION":esc(p.title.toUpperCase()))+'</span><span class="cvvol">'+p.items.length+' E-BOOKS</span></div><h3>'+esc(p.title)+'</h3><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div><div class="package-price">'+money(p.price)+'</div><div class="meta">Suggested package price · subject to confirmation</div></div><a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">Purchase Package</a></div>';
+  el.innerHTML='<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+(p.id==="PKG-ALL"?"COMPLETE COLLECTION":esc(p.title.toUpperCase()))+'</span><span class="cvvol">'+p.items.length+' E-BOOKS</span></div><h3>'+esc(p.title)+'</h3><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div><div class="package-price">'+money(p.price)+'</div><div class="meta">Package price</div></div><a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">Purchase Package</a></div>';
   grid.appendChild(el);
  });
 }
