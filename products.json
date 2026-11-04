@@ -10,7 +10,8 @@
       "title": "Arithmetic – Volume I: Previous Year Questions (2021–2025)",
       "pages": 204,
       "price": 249,
-      "description": "A judgeship-wise collection of previous-year arithmetic questions for Odisha District Court recruitment examinations."
+      "description": "A judgeship-wise collection of previous-year arithmetic questions for Odisha District Court recruitment examinations.",
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ARI-01.webp"
     },
     {
       "id": "ARI-02",
@@ -18,7 +19,8 @@
       "title": "Arithmetic – Volume II: Zero to Hero",
       "pages": 518,
       "price": 249,
-      "description": "A structured arithmetic guide covering foundational numeracy, number systems, HCF and LCM, fractions, equations, commercial arithmetic and practice."
+      "description": "A structured arithmetic guide covering foundational numeracy, number systems, HCF and LCM, fractions, equations, commercial arithmetic and practice.",
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ARI-02.webp"
     },
     {
       "id": "GK-01",
@@ -26,7 +28,8 @@
       "title": "GK – Volume I: Complete GK & Current Affairs",
       "pages": 585,
       "price": 249,
-      "description": "Twenty subject areas, including Constitution and Polity, Judiciary, Odisha GK, Indian History, Geography, Science, Economy and Current Affairs."
+      "description": "Twenty subject areas, including Constitution and Polity, Judiciary, Odisha GK, Indian History, Geography, Science, Economy and Current Affairs.",
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/GK-01.webp"
     },
     {
       "id": "GK-02",
@@ -34,7 +37,8 @@
       "title": "GK – Volume II: Previous Year Questions (2016–2025)",
       "pages": 537,
       "price": 249,
-      "description": "A judgeship- and year-organised collection of solved General Knowledge previous-year questions."
+      "description": "A judgeship- and year-organised collection of solved General Knowledge previous-year questions.",
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/GK-02.webp"
     },
     {
       "id": "ENG-01",
@@ -42,7 +46,8 @@
       "title": "English – Volume I: Previous Year Questions (2016–2025)",
       "pages": 298,
       "price": 299,
-      "description": "Year-wise and judgeship-wise English previous-year questions."
+      "description": "Year-wise and judgeship-wise English previous-year questions.",
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-01.webp"
     },
     {
       "id": "ENG-02",
@@ -50,7 +55,8 @@
       "title": "English – Volume II: Essay Writing",
       "pages": 408,
       "price": 199,
-      "description": "An essay preparation guide with previous-year topic analysis and master model essays."
+      "description": "An essay preparation guide with previous-year topic analysis and master model essays.",
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-02.webp"
     },
     {
       "id": "ENG-03",
@@ -58,7 +64,8 @@
       "title": "English – Volume III: Letter & Application Writing",
       "pages": 143,
       "price": 199,
-      "description": "Previous-year question analysis, writing formats and model letters and applications."
+      "description": "Previous-year question analysis, writing formats and model letters and applications.",
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-03.webp"
     },
     {
       "id": "ENG-04",
@@ -66,7 +73,8 @@
       "title": "English – Volume IV: Summary Writing",
       "pages": 185,
       "price": 199,
-      "description": "Summary-writing method, compression techniques, title-making strategy and solved question practice."
+      "description": "Summary-writing method, compression techniques, title-making strategy and solved question practice.",
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-04.webp"
     },
     {
       "id": "ENG-05",
@@ -74,7 +82,8 @@
       "title": "English – Volume V: Odia to English Translation",
       "pages": 157,
       "price": 199,
-      "description": "Translation framework, sentence architecture, grammar and passage practice based on district court papers."
+      "description": "Translation framework, sentence architecture, grammar and passage practice based on district court papers.",
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-05.webp"
     },
     {
       "id": "ENG-06",
@@ -82,7 +91,8 @@
       "title": "English – Volume VI: English to Odia Translation",
       "pages": 40,
       "price": 149,
-      "description": "A focused guide to English-to-Odia translation, sentence structure and syntactic alignment."
+      "description": "A focused guide to English-to-Odia translation, sentence structure and syntactic alignment.",
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-06.webp"
     }
   ],
   "packages": [
