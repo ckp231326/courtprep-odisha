@@ -103,7 +103,27 @@ function renderPackages(){
   grid.appendChild(el);
  });
 }
-fetch("products.json").then(r=>{if(!r.ok)throw Error("Catalogue could not load");return r.json()}).then(d=>{catalogue=d;renderFilters();renderProducts();renderPackages();renderFreeCourses();}).catch(()=>{document.getElementById("productGrid").innerHTML='<div class="empty">The catalogue is temporarily unavailable. Please contact COURTPREP ODISHA.</div>'});
+function initializeCatalogue(data){
+ if(!data||data.error||!Array.isArray(data.products)||!Array.isArray(data.packages))throw new Error(data&&data.error?data.error:"Invalid catalogue response");
+ catalogue=data;renderFilters();renderProducts();renderPackages();renderFreeCourses();
+}
+window.COURTPREP_CATALOG_CALLBACK=function(data){
+ try{initializeCatalogue(data);}catch(e){loadStaticFallback();}
+};
+function loadStaticFallback(){
+ if(catalogue)return;
+ fetch("products.json").then(r=>{if(!r.ok)throw Error("Fallback catalogue unavailable");return r.json()})
+ .then(initializeCatalogue)
+ .catch(()=>{document.getElementById("productGrid").innerHTML='<div class="empty">The catalogue is temporarily unavailable. Please contact COURTPREP ODISHA.</div>';});
+}
+function loadCatalogueFromSheet(){
+ const script=document.createElement("script");
+ script.src=CHECKOUT_URL+"?catalog=1&callback=COURTPREP_CATALOG_CALLBACK&v="+Date.now();
+ script.onerror=loadStaticFallback;
+ document.head.appendChild(script);
+ window.setTimeout(()=>{if(!catalogue)loadStaticFallback();},7000);
+}
+loadCatalogueFromSheet();
 document.getElementById("search").addEventListener("input",renderProducts);
 </script>
 </body></html>
