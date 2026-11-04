@@ -24,7 +24,7 @@ main{padding:46px 0 65px}.section-head{display:flex;justify-content:space-betwee
 .search{border:1px solid var(--line);border-radius:8px;padding:11px 13px;min-width:min(270px,100%);background:white;font-size:14px}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
 .card{background:white;border:1px solid var(--line);border-radius:13px;padding:17px;display:flex;flex-direction:column;box-shadow:0 5px 18px #142c4808;min-height:292px}
-.cover{height:114px;border-radius:9px;background:linear-gradient(135deg,#142c48,#2b6688);color:white;padding:15px;display:flex;flex-direction:column;justify-content:space-between;margin-bottom:15px;position:relative;overflow:hidden}
+.book-cover{display:block;width:100%;height:210px;object-fit:contain;background:#eef2f6;border-radius:9px;margin-bottom:15px;padding:7px}.cover{height:114px;border-radius:9px;background:linear-gradient(135deg,#142c48,#2b6688);color:white;padding:15px;display:flex;flex-direction:column;justify-content:space-between;margin-bottom:15px;position:relative;overflow:hidden}
 .cover:after{content:"";position:absolute;width:125px;height:125px;border:1px solid #ffffff30;border-radius:50%;right:-35px;bottom:-57px}
 .cover .mini{font-size:9px;letter-spacing:1.6px;font-weight:800;color:#e9c86d}.cover .cvtitle{font-size:18px;line-height:1.1;font-weight:900;max-width:85%;position:relative;z-index:1}.cover .cvvol{font-size:10px;color:#d9e6f0;font-weight:700}
 .card h3{font-size:16px;line-height:1.35;color:var(--navy);margin:0 0 7px}.meta{font-size:11px;color:var(--muted);margin-bottom:9px}.desc{font-size:13px;color:#536276;flex:1;margin:0 0 13px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid #edf0f4;padding-top:12px}.price{font-size:22px;color:var(--navy);font-weight:900}.ask{font-size:12px;color:var(--green);font-weight:800}
@@ -40,13 +40,16 @@ footer{background:#0e2136;color:#dce6f0;padding:34px 0 25px}.foot{display:grid;g
 </head>
 <body>
 <div class="topbar"><div class="container"><span>Digital study materials for Odisha District Court recruitment examinations</span><span>Independent educational publication</span></div></div>
-<header><div class="container header-inner"><div class="brand">COURTPREP ODISHA<small>COMPLETE PREPARATION. CONFIDENT PERFORMANCE.</small></div><nav><a href="#books">Books</a><a href="#packages">Packages</a><a href="#about">About</a><a href="#contact">Contact</a><a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">Buy Now</a></nav></div></header>
+<header><div class="container header-inner"><div class="brand">COURTPREP ODISHA<small>COMPLETE PREPARATION. CONFIDENT PERFORMANCE.</small></div><nav><a href="#books">Books</a><a href="#packages">Packages</a><a href="#about">About</a><a href="#contact">Contact</a><a class="btn" href="https://script.google.com/macros/s/AKfycbydzZ98cww_5f3c7zrUngSTwPQzcgyRvX6YE4WUwsQ1dm5sLywcEQOPbVx6LkzrMfQ0/exec" target="_blank" rel="noopener">Buy Now</a></nav></div></header>
 <section class="hero"><div class="container"><span class="kicker">DISTRICT COURT EXAM STUDY COLLECTION</span><h1>Prepare systematically. Practise with purpose.</h1><p>Explore a focused collection of digital study materials in Arithmetic, General Knowledge and English, prepared for aspirants of Odisha District Court recruitment examinations.</p><div class="hero-actions"><a class="btn" href="#books">Explore the e-books</a><a class="btn secondary" href="#packages">View complete packages</a><a class="btn" href="https://script.google.com/macros/s/AKfycbydzZ98cww_5f3c7zrUngSTwPQzcgyRvX6YE4WUwsQ1dm5sLywcEQOPbVx6LkzrMfQ0/exec" target="_blank" rel="noopener">Open Secure Checkout</a></div></div></section>
 <main class="container">
 <div class="stats"><div class="stat"><strong>10</strong><span>Specialised e-books</span></div><div class="stat"><strong>3,075</strong><span>Combined PDF pages</span></div><div class="stat"><strong>3</strong><span>Core examination subjects</span></div></div>
 <div class="notice"><strong>Online ordering is available:</strong> Select an e-book or package below and use its purchase button to open the COURTPREP ODISHA checkout. Email verification and payment confirmation are required before access is granted.</div>
 <section id="books" style="padding-top:33px"><div class="section-head"><div><h2>Explore individual e-books</h2><div class="sub">Choose the subject and volume that match your preparation needs.</div></div><input class="search" id="search" type="search" placeholder="Search books or topics…" aria-label="Search books"></div><div class="filters" id="filters"></div><div class="grid" id="productGrid"></div></section>
 <section id="packages" class="packages"><div class="section-head"><div><h2>Complete subject packages</h2><div class="sub">Combined volumes for structured subject-wise preparation.</div></div></div><div class="grid" id="packageGrid"></div></section>
+<section id="howToPurchase" class="band" style="margin-top:34px"><div style="font-size:24px">🛒</div><div><strong>How to purchase</strong><p>1. Choose an e-book or subject package. 2. Enter your name, Gmail address and mobile number. 3. Verify your Gmail using the one-time code. 4. Pay through UPI and submit the transaction reference. 5. After the payment is checked and approved, Google Drive viewer access is granted to your verified Gmail address. Free courses require Gmail verification but no payment.</p></div></section>
+<section id="faq" class="band" style="margin-top:16px"><div style="font-size:24px">❓</div><div><strong>Frequently asked questions</strong><p><b>When will I receive the books?</b> After the payment is verified and approved. <b>Which Gmail should I use?</b> Use the Gmail address where you want Google Drive access. <b>Can I purchase a package?</b> Yes, the subject packages and complete collection are available from the catalogue. <b>Are these official publications?</b> No. COURTPREP ODISHA is an independent educational initiative. <b>Need assistance?</b> Email ckpbpo@gmail.com.</p></div></section>
+<section id="freeCourses" class="packages hidden"><div class="section-head"><div><h2>Free courses and resources</h2><div class="sub">Free learning materials. Gmail verification is required to receive access.</div></div></div><div class="grid" id="freeGrid"></div></section>
 <section id="about" class="band"><div style="font-size:24px">📚</div><div><strong>About COURTPREP ODISHA</strong><p>COURTPREP ODISHA is an independent educational initiative offering organised digital study materials for competitive examination aspirants. The materials are not official publications and are not affiliated with any District Court or recruitment authority.</p></div></section>
 <section id="contact" style="padding-top:36px"><div class="section-head"><div><h2>Product enquiries</h2><div class="sub">Request the catalogue, sample availability and purchase instructions.</div></div><a class="btn" href="https://script.google.com/macros/s/AKfycbydzZ98cww_5f3c7zrUngSTwPQzcgyRvX6YE4WUwsQ1dm5sLywcEQOPbVx6LkzrMfQ0/exec" target="_blank" rel="noopener">Go to Checkout</a></div></section>
 </main>
@@ -68,7 +71,26 @@ function renderProducts(){
  if(!list.length){grid.innerHTML='<div class="empty">No matching books found.</div>';return}
  list.forEach(p=>{
   const el=document.createElement("article");el.className="card";
-  el.innerHTML='<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+esc(coverTitle(p))+'</span><span class="cvvol">'+esc(p.id)+' · VOLUME</span></div><h3>'+esc(p.title)+'</h3><div class="meta">'+p.pages+' PDF pages · '+esc(p.category)+'</div><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div><div class="price">'+money(p.price)+'</div><div class="meta">Price</div></div><a class="btn" href="https://script.google.com/macros/s/AKfycbydzZ98cww_5f3c7zrUngSTwPQzcgyRvX6YE4WUwsQ1dm5sLywcEQOPbVx6LkzrMfQ0/exec" target="_blank" rel="noopener">Buy Now</a></div>';
+  const cover=p.cover
+    ? '<img class="book-cover" src="'+esc(p.cover)+'" alt="'+esc(p.title)+' cover" loading="lazy">'
+    : '<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+esc(coverTitle(p))+'</span><span class="cvvol">'+esc(p.id)+' · VOLUME</span></div>';
+  const isFree=Number(p.price)===0;
+  const priceText=isFree?"FREE":money(p.price);
+  const actionText=isFree?"Get Free Access":"Buy Now";
+  el.innerHTML=cover+'<h3>'+esc(p.title)+'</h3><div class="meta">'+p.pages+' PDF pages · '+esc(p.category)+'</div><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div><div class="price">'+priceText+'</div><div class="meta">Price</div></div><a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">'+actionText+'</a></div>';
+  grid.appendChild(el);
+ });
+}
+function renderFreeCourses(){
+ const section=document.getElementById("freeCourses"),grid=document.getElementById("freeGrid");
+ const freeItems=catalogue.products.filter(p=>Number(p.price)===0);
+ grid.innerHTML="";
+ if(!freeItems.length){section.classList.add("hidden");return}
+ section.classList.remove("hidden");
+ freeItems.forEach(p=>{
+  const el=document.createElement("article");el.className="card";
+  const cover=p.cover?'<img class="book-cover" src="'+esc(p.cover)+'" alt="'+esc(p.title)+' cover" loading="lazy">':'<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+esc(coverTitle(p))+'</span><span class="cvvol">'+esc(p.id)+'</span></div>';
+  el.innerHTML=cover+'<h3>'+esc(p.title)+'</h3><div class="meta">'+p.pages+' PDF pages · '+esc(p.category)+'</div><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div class="price">FREE</div><a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">Get Free Access</a></div>';
   grid.appendChild(el);
  });
 }
@@ -76,11 +98,12 @@ function renderPackages(){
  const grid=document.getElementById("packageGrid");
  catalogue.packages.forEach(p=>{
   const el=document.createElement("article");el.className="card package-card"+(p.id==="PKG-ALL"?" featured":"");
-  el.innerHTML='<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+(p.id==="PKG-ALL"?"COMPLETE COLLECTION":esc(p.title.toUpperCase()))+'</span><span class="cvvol">'+p.items.length+' E-BOOKS</span></div><h3>'+esc(p.title)+'</h3><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div><div class="package-price">'+money(p.price)+'</div><div class="meta">Package price</div></div><a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">Purchase Package</a></div>';
+  const isFree=Number(p.price)===0;
+  el.innerHTML='<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+(p.id==="PKG-ALL"?"COMPLETE COLLECTION":esc(p.title.toUpperCase()))+'</span><span class="cvvol">'+p.items.length+' E-BOOKS</span></div><h3>'+esc(p.title)+'</h3><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div><div class="package-price">'+(isFree?"FREE":money(p.price))+'</div><div class="meta">Package price</div></div><a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">'+(isFree?"Get Free Access":"Purchase Package")+'</a></div>';
   grid.appendChild(el);
  });
 }
-fetch("products.json").then(r=>{if(!r.ok)throw Error("Catalogue could not load");return r.json()}).then(d=>{catalogue=d;renderFilters();renderProducts();renderPackages();}).catch(()=>{document.getElementById("productGrid").innerHTML='<div class="empty">The catalogue is temporarily unavailable. Please contact COURTPREP ODISHA.</div>'});
+fetch("products.json").then(r=>{if(!r.ok)throw Error("Catalogue could not load");return r.json()}).then(d=>{catalogue=d;renderFilters();renderProducts();renderPackages();renderFreeCourses();}).catch(()=>{document.getElementById("productGrid").innerHTML='<div class="empty">The catalogue is temporarily unavailable. Please contact COURTPREP ODISHA.</div>'});
 document.getElementById("search").addEventListener("input",renderProducts);
 </script>
 </body></html>
