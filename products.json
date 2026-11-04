@@ -11,7 +11,8 @@
       "pages": 204,
       "price": 249,
       "description": "A judgeship-wise collection of previous-year arithmetic questions for Odisha District Court recruitment examinations.",
-      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ARI-01.webp"
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ARI-01.webp",
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ARI-01_SAMPLE_PREVIEW.pdf"
     },
     {
       "id": "ARI-02",
@@ -20,7 +21,8 @@
       "pages": 518,
       "price": 249,
       "description": "A structured arithmetic guide covering foundational numeracy, number systems, HCF and LCM, fractions, equations, commercial arithmetic and practice.",
-      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ARI-02.webp"
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ARI-02.webp",
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ARI-02_SAMPLE_PREVIEW.pdf"
     },
     {
       "id": "GK-01",
@@ -29,7 +31,8 @@
       "pages": 585,
       "price": 249,
       "description": "Twenty subject areas, including Constitution and Polity, Judiciary, Odisha GK, Indian History, Geography, Science, Economy and Current Affairs.",
-      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/GK-01.webp"
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/GK-01.webp",
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/GK-01_SAMPLE_PREVIEW.pdf"
     },
     {
       "id": "GK-02",
@@ -38,7 +41,8 @@
       "pages": 537,
       "price": 249,
       "description": "A judgeship- and year-organised collection of solved General Knowledge previous-year questions.",
-      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/GK-02.webp"
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/GK-02.webp",
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/GK-02_SAMPLE_PREVIEW.pdf"
     },
     {
       "id": "ENG-01",
@@ -47,7 +51,8 @@
       "pages": 298,
       "price": 299,
       "description": "Year-wise and judgeship-wise English previous-year questions.",
-      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-01.webp"
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-01.webp",
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-01_SAMPLE_PREVIEW.pdf"
     },
     {
       "id": "ENG-02",
@@ -56,7 +61,8 @@
       "pages": 408,
       "price": 199,
       "description": "An essay preparation guide with previous-year topic analysis and master model essays.",
-      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-02.webp"
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-02.webp",
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-02_SAMPLE_PREVIEW.pdf"
     },
     {
       "id": "ENG-03",
@@ -65,7 +71,8 @@
       "pages": 143,
       "price": 199,
       "description": "Previous-year question analysis, writing formats and model letters and applications.",
-      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-03.webp"
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-03.webp",
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-03_SAMPLE_PREVIEW.pdf"
     },
     {
       "id": "ENG-04",
@@ -74,7 +81,8 @@
       "pages": 185,
       "price": 199,
       "description": "Summary-writing method, compression techniques, title-making strategy and solved question practice.",
-      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-04.webp"
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-04.webp",
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-04_SAMPLE_PREVIEW.pdf"
     },
     {
       "id": "ENG-05",
@@ -83,7 +91,8 @@
       "pages": 157,
       "price": 199,
       "description": "Translation framework, sentence architecture, grammar and passage practice based on district court papers.",
-      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-05.webp"
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-05.webp",
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-05_SAMPLE_PREVIEW.pdf"
     },
     {
       "id": "ENG-06",
@@ -92,7 +101,8 @@
       "pages": 40,
       "price": 149,
       "description": "A focused guide to English-to-Odia translation, sentence structure and syntactic alignment.",
-      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-06.webp"
+      "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-06.webp",
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-06_SAMPLE_PREVIEW.pdf"
     }
   ],
   "packages": [
