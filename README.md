@@ -1,38 +1,42 @@
 # COURTPREP ODISHA
 
-Public-facing catalogue for digital study materials for Odisha District Court recruitment examinations.
+Public catalogue for independent digital study materials for Odisha District Court recruitment examination aspirants.
 
-## Current phase
-This repository contains the public catalogue and enquiry interface only. It does **not** process payments or grant Google Drive access yet. Do not tell customers that online checkout is active until the Google Apps Script backend, customer email verification, payment approval and Drive delivery have been deployed and tested.
+## Live service
 
-## Privacy boundary
+- Public website: https://ckp231326.github.io/courtprep-odisha/
+- The public website uses the Apps Script read-only catalogue endpoint to display active products, prices and packages from the private Google Sheet. If that endpoint is unavailable, it falls back to `products.json`.
+- Checkout is handled by a Google Apps Script web app. It supports Gmail OTP verification, UPI payment-reference submission, manual bank-credit approval and Google Drive viewer-access delivery.
+- Paid order delivery is not automatic on UPI submission. An administrator must verify actual payment credit before approving the order.
+- Products with a price of zero are free resources. Gmail verification is required; after verification, the app attempts to grant Drive viewer access without a UPI step.
+
+## Catalogue maintenance
+
+The private Google Sheet is the source of truth for live catalogue information.
+
+- Add or edit individual resources in the `PRODUCTS` sheet.
+- Add or edit bundles in the `PACKAGES` sheet.
+- The public site and checkout read the active rows from that sheet after the latest Apps Script version is deployed.
+- `products.json` is retained as a static fallback if the live catalogue endpoint is unavailable.
+
+The optional `COVER_URL` and `SAMPLE_URL` fields can be added to the PRODUCTS sheet to display a cover image and a sample-page link. Existing required columns remain unchanged.
+
+## Privacy and security boundary
+
 Never commit:
-- Master PDF files or public Drive links
+- Master PDF files or private Google Drive links
 - Google Drive file IDs
-- UPI QR images or payment credentials
+- UPI QR images or private payment credentials
 - UPI PINs, OTPs, passwords, API keys or admin tokens
 - Customer names, emails, phone numbers, UTRs or order records
 
-The repository is public. Keep all backend configuration and customer data in the private Google account/backend.
+The repository is public. Only public catalogue data and public cover/sample assets belong here. Keep backend configuration and customer data in the private Google account/backend.
 
-## Files
-- `index.html`: responsive catalogue and email enquiry basket
-- `products.json`: public product descriptions and proposed prices
+## Website deployment
 
-## Publish with GitHub Pages
-1. Open repository **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select branch **main** and folder **/(root)**, then Save.
-4. Wait for GitHub Pages to publish the site. The URL will normally be:
-   `https://ckp231326.github.io/courtprep-odisha/`
+GitHub Pages publishes the `main` branch from the repository root. The public site URL is:
+https://ckp231326.github.io/courtprep-odisha/
 
-## Next technical phase
-Connect the catalogue to a secured Google Apps Script web app. Implement:
-- Customer email verification before granting Drive access
-- Server-side price and product validation
-- Manual bank/UPI transaction verification
-- Idempotent approval and fulfilment
-- Drive viewer permissions and email notifications
-- Admin authentication, audit log, retries and backups
+## Policies
 
-Before accepting orders, add and review privacy, terms of sale, refund/cancellation and contact information.
+Before broad public promotion, publish accurate privacy, terms of sale and refund/cancellation policies. Do not promise that screenshotting or photographing a screen can be prevented; Google Drive viewer restrictions are limited to supported download, print and copy controls.
