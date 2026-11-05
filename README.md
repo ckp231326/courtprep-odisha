@@ -21,6 +21,17 @@ The private Google Sheet is the source of truth for live catalogue information.
 
 The optional `COVER_URL` and `SAMPLE_URL` fields can be added to the PRODUCTS sheet to display a cover image and a sample-page link. Existing required columns remain unchanged.
 
+## Product details on the public catalogue
+
+Each product card includes an expandable **View book details** section. The live catalogue reads these optional public fields from the private Google Sheet's `PRODUCTS` tab:
+
+- `CONTENTS` — topic or chapter coverage, with items separated by the pipe character (`|`)
+- `FEATURES` — study features and included resources, separated by `|`
+- `LANGUAGE` — language used in the book
+- `SUITABLE_FOR` — intended learner or preparation need
+
+These are columns K:N, following the existing `COVER_URL` and `SAMPLE_URL` columns I:J. The Apps Script catalogue endpoint exposes only these public product details; it does not expose Drive IDs, orders or customer data.
+
 ## Privacy and security boundary
 
 Never commit:
