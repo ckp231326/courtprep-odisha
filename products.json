@@ -12,7 +12,11 @@
       "price": 249,
       "description": "A judgeship-wise collection of previous-year arithmetic questions for Odisha District Court recruitment examinations.",
       "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ARI-01.webp",
-      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ARI-01_SAMPLE_PREVIEW.pdf"
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ARI-01_SAMPLE_PREVIEW.pdf",
+      "contents": "2021–2025 Arithmetic question papers|Year-wise and judgeship-wise question sets|Number system, HCF and LCM|Fractions, decimals and simplification|Percentage, profit and loss, simple and compound interest|Ratio, proportion, partnership and average|Time and work, speed, time and distance, trains|Mixture and alligation, mensuration, ages and other numerical applications",
+      "features": "Actual previous-year question papers collected from five examination years|Organised for year-wise and judgeship-wise practice|Helps candidates recognise the range and style of questions asked|Use as a paper-practice companion to Arithmetic Volume II",
+      "language": "English question papers with introductory guidance in Odia and English",
+      "suitableFor": "Candidates who want to practise actual Odisha District Court arithmetic papers and understand the examination pattern before strengthening concepts through Volume II."
     },
     {
       "id": "ARI-02",
@@ -22,7 +26,11 @@
       "price": 249,
       "description": "A structured arithmetic guide covering foundational numeracy, number systems, HCF and LCM, fractions, equations, commercial arithmetic and practice.",
       "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ARI-02.webp",
-      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ARI-02_SAMPLE_PREVIEW.pdf"
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ARI-02_SAMPLE_PREVIEW.pdf",
+      "contents": "Volume I — Foundational numeracy and number system: number systems, divisibility, HCF and LCM, fractions, decimals, surds, indices, simplification and linear equations|Volume II — Commercial and financial arithmetic: percentage, profit and loss, discount, simple and compound interest, ratio, proportion, partnership, mixture and alligation|Volume III — Rate, work, time, speed, distance and data analysis: time and work, pipes and cisterns, wages, chain rule, trains, boats and streams, data interpretation and statistics",
+      "features": "Concepts and fundamentals explained progressively from the basics|Formulae, methods, solved examples and step-by-step descriptive solutions|Solution structure uses Given, Required, Solution and Final Answer|Includes solved previous-year questions, practice exercises and quick revision material",
+      "language": "Simple English explanations with conversational Odia support",
+      "suitableFor": "Beginners and candidates who need to build their arithmetic foundation before attempting unfamiliar or lengthy examination questions."
     },
     {
       "id": "GK-01",
@@ -32,7 +40,11 @@
       "price": 249,
       "description": "Twenty subject areas, including Constitution and Polity, Judiciary, Odisha GK, Indian History, Geography, Science, Economy and Current Affairs.",
       "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/GK-01.webp",
-      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/GK-01_SAMPLE_PREVIEW.pdf"
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/GK-01_SAMPLE_PREVIEW.pdf",
+      "contents": "Indian Constitution and Polity|Judiciary and Legal General Knowledge|Odisha History, Geography, Culture, Literature and Personalities|Odisha Districts, Places and Institutions|Indian History and Indian & World Geography|General Science, Space and Technology|Computer and Digital Awareness|Economy and Banking|Books, Authors, Art and Culture|Awards, Honours, Sports, Important Days and Dates|International Organisations, World GK, Abbreviations, Superlatives, Firsts and Sobriquets|Current Affairs: Odisha, National Affairs and Government Schemes, Legal and Judicial Reforms, International Affairs, Economy, Science, Defence, Appointments, Awards, Sports and Important Days",
+      "features": "Twenty subject chapters covering major areas of General Knowledge|Dedicated coverage of Odisha-related history, geography, culture, districts and current affairs|A separate Judiciary and Legal GK chapter|Current Affairs organised into eleven topic sections|Examination-oriented references and quick-reference facts",
+      "language": "English",
+      "suitableFor": "Candidates who want one organised, Odisha-focused General Knowledge and Current Affairs reference for District Court recruitment preparation."
     },
     {
       "id": "GK-02",
@@ -42,7 +54,11 @@
       "price": 249,
       "description": "A judgeship- and year-organised collection of solved General Knowledge previous-year questions.",
       "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/GK-02.webp",
-      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/GK-02_SAMPLE_PREVIEW.pdf"
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/GK-02_SAMPLE_PREVIEW.pdf",
+      "contents": "Previous-year GK papers from 2025, 2024, 2023, 2022 and 2021|Archival question papers covering 2016–2020|Year-wise navigation followed by judgeship-wise question papers|Solved answers and answer-key support",
+      "features": "Ten years of collected Odisha District Court GK questions|Papers arranged by examination year and judgeship|Provides exposure to different question formats and repeatedly tested areas|Useful for practice, answer checking and identifying knowledge gaps",
+      "language": "English",
+      "suitableFor": "Candidates who want to study how General Knowledge has actually been tested across Odisha District Court examinations and judgeships."
     },
     {
       "id": "ENG-01",
@@ -52,7 +68,11 @@
       "price": 299,
       "description": "Year-wise and judgeship-wise English previous-year questions.",
       "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-01.webp",
-      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-01_SAMPLE_PREVIEW.pdf"
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-01_SAMPLE_PREVIEW.pdf",
+      "contents": "Previous-year English papers from 2016–2025|Year-wise and judgeship-wise examination papers|Essay-writing questions|Letter and application-writing questions|Summary and précis tasks|Translation questions|Other English sections and tasks appearing in the collected papers",
+      "features": "A ten-year archive of collected English examination papers|Questions organised by year and judgeship|Helps candidates recognise the actual descriptive examination pattern|Useful for timed practice and identifying areas that need focused preparation",
+      "language": "English question papers",
+      "suitableFor": "Candidates who want to examine the actual English papers first and identify whether they need further work in essays, letters, applications, summaries, translation or other prescribed tasks."
     },
     {
       "id": "ENG-02",
@@ -62,7 +82,11 @@
       "price": 199,
       "description": "An essay preparation guide with previous-year topic analysis and master model essays.",
       "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-02.webp",
-      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-02_SAMPLE_PREVIEW.pdf"
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-02_SAMPLE_PREVIEW.pdf",
+      "contents": "Essay questions arranged by examination year from 2016–2025|Repeated essay topics and topic analysis|Twenty Master Essays on Artificial Intelligence, Social Media, Women Empowerment, Environment, Education, Unemployment, Judiciary, Science and Technology, Digital Addiction, Corruption, Child Protection, Water Crisis, Wildlife, Youth, Health, Population, Peace, Democracy, Sanitation and Sports|Essay Topic Idea Bank|Thinking chains and a strategy for unfamiliar essay questions",
+      "features": "A structured essay-preparation method rather than a collection of unrelated essays|Twenty carefully organised Master Essays|Topic-wise idea bank and thinking chains|Guidance on adapting prepared themes to different questions|A quick idea-generation method for unfamiliar topics",
+      "language": "English essay material with Odia guidance",
+      "suitableFor": "Candidates preparing for descriptive English essay questions who want to organise ideas, develop paragraphs and adapt themes instead of memorising isolated essays."
     },
     {
       "id": "ENG-03",
@@ -72,7 +96,11 @@
       "price": 199,
       "description": "Previous-year question analysis, writing formats and model letters and applications.",
       "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-03.webp",
-      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-03_SAMPLE_PREVIEW.pdf"
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-03_SAMPLE_PREVIEW.pdf",
+      "contents": "Previous-year letter and application questions arranged year-wise and judgeship-wise for 2016–2025|Letter and application fundamentals, formats and question-planning|Formal and informal letters|Applications on roads, bridges, transport, water, sanitation, electricity and public utilities|Police, crime, health, education, certificates, scholarships, banks and public services|Government schemes, jobs, leave and official requests|Letters to editors and public authorities|Personal letters, reports, universal templates, practice and revision",
+      "features": "Analysis of repeated questions, important topics and preparation priorities|Separate guidance for formal letters, informal letters and applications|Useful expressions and common-error corrections|Model applications and letters across administrative and personal themes|Templates for adapting a format to unfamiliar questions",
+      "language": "English writing material with Odia guidance",
+      "suitableFor": "Candidates who need to understand the difference between letters and applications and practise the correct format, content and tone for descriptive examination answers."
     },
     {
       "id": "ENG-04",
@@ -82,7 +110,11 @@
       "price": 199,
       "description": "Summary-writing method, compression techniques, title-making strategy and solved question practice.",
       "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-04.webp",
-      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-04_SAMPLE_PREVIEW.pdf"
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-04_SAMPLE_PREVIEW.pdf",
+      "contents": "Précis and summary writing: meaning, differences and examiner expectations|Four-step solving formula: reading, word-count and target setup, noise trimming, final synthesis and fair copy|Five compression techniques: one-word substitution, catalogue compression, eliminating metaphors and rhetoric, converting direct speech into an indirect concept, and clause-to-phrase reduction|Title-making strategy|Examination checklist and common mistakes|Solved question bank and practice",
+      "features": "Explains how to identify the central idea and retain essential points|Step-by-step method for reducing a passage accurately|Practical compression techniques and title-selection guidance|Solved previous-year questions and examination-oriented practice",
+      "language": "English with Odia explanations and terminology",
+      "suitableFor": "Candidates who lose marks by writing too much, missing the central idea, exceeding word limits or selecting unsuitable titles in summary and précis questions."
     },
     {
       "id": "ENG-05",
@@ -92,7 +124,11 @@
       "price": 199,
       "description": "Translation framework, sentence architecture, grammar and passage practice based on district court papers.",
       "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-05.webp",
-      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-05_SAMPLE_PREVIEW.pdf"
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-05_SAMPLE_PREVIEW.pdf",
+      "contents": "Core translation framework and sentence architecture: SOV to SVO, tense and auxiliary mapping, sentence-pattern formula bank, complex sentences, relative clauses, passive voice and sentence combining|Administrative, court and legal terminology|Judicial and administrative passage translation|Socio-economic, philosophical, educational and environmental vocabulary|Comparative translation clinic|Syntax traps, false friends, practice drills and examiner evaluation rubrics|Previous-year translation passages from Odisha District Court judgeships",
+      "features": "Teaches sentence restructuring instead of word-for-word translation|Explains tense, aspect, auxiliary verbs and common sentence patterns|Includes thematic vocabulary for administrative, legal and other contexts|Contains worked passages, practice drills and self-assessment guidance",
+      "language": "Odia and English, with bilingual explanations",
+      "suitableFor": "Candidates who need to translate Odia passages into natural, grammatically correct English while preserving the original meaning."
     },
     {
       "id": "ENG-06",
@@ -102,7 +138,11 @@
       "price": 149,
       "description": "A focused guide to English-to-Odia translation, sentence structure and syntactic alignment.",
       "cover": "https://ckp231326.github.io/courtprep-odisha/images/covers/ENG-06.webp",
-      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-06_SAMPLE_PREVIEW.pdf"
+      "sampleUrl": "https://ckp231326.github.io/courtprep-odisha/samples/ENG-06_SAMPLE_PREVIEW.pdf",
+      "contents": "Sentence structure and syntactic alignment: English SVO and Odia SOV|Positioning modifiers, adverbs and prepositional phrases|Tense, aspect and modal usage|Complex and compound sentence structures|Common pitfalls, false friends and translation blunders|Thematic vocabulary: judicial, legal and constitutional terms; revenue, land and public administration; environment, ecology, disaster and science; society, ethics, governance and phrasal idioms|Previous-year English-to-Odia translation questions",
+      "features": "Explains how to restructure English sentences into natural Odia|Covers grammar and sentence patterns needed for translation|Includes thematic English–Odia vocabulary with contextual usage|Uses solved examples and previous-year question practice",
+      "language": "English and Odia, with bilingual explanations",
+      "suitableFor": "Candidates who understand English words but need practice expressing their meaning naturally and accurately in Odia."
     }
   ],
   "packages": [
