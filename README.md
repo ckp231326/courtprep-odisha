@@ -32,6 +32,12 @@ Each product card includes an expandable **View book details** section. The live
 
 These are columns K:N, following the existing `COVER_URL` and `SAMPLE_URL` columns I:J. The Apps Script catalogue endpoint exposes only these public product details; it does not expose Drive IDs, orders or customer data.
 
+## Editable homepage content
+
+The public homepage introduction, ordering notice, three benefit cards, complete-collection highlight, About text and closing message are designed to be edited through the private Google Sheet `SETTINGS` tab.
+
+After installing the homepage-settings version of `Code.gs`, append the supplied `HOME_*` key/value rows to `SETTINGS`. To change homepage wording later, edit only the `VALUE` cell beside the relevant `HOME_*` key. Keep the key unchanged. The public catalogue endpoint exposes only the explicitly whitelisted homepage fields; other operational settings remain private. Ordinary copy changes do not require an Apps Script redeployment.
+
 ## Privacy and security boundary
 
 Never commit:
