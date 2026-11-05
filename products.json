@@ -198,5 +198,29 @@
       "price": 799,
       "description": "All ten e-books across Arithmetic, General Knowledge and English."
     }
-  ]
+  ],
+  "home": {
+    "heroKicker": "DISTRICT COURT EXAM STUDY COLLECTION",
+    "heroTitle": "Prepare systematically. Practise with purpose.",
+    "heroDescription": "Explore a focused collection of digital study materials in Arithmetic, General Knowledge and English, prepared for aspirants of Odisha District Court recruitment examinations.",
+    "heroPrimaryButton": "Explore the e-books",
+    "heroSecondaryButton": "View complete packages",
+    "noticeTitle": "Online ordering is available:",
+    "noticeText": "Select an e-book or package below and use its purchase button to open the COURTPREP ODISHA checkout. Email verification and payment confirmation are required before access is granted.",
+    "benefitsTitle": "Study materials organised for focused preparation",
+    "benefit1Title": "Previous-year question practice",
+    "benefit1Text": "Practise with collected Odisha District Court questions arranged by year and judgeship.",
+    "benefit2Title": "Build concepts step by step",
+    "benefit2Text": "Use explanations, methods and worked examples to strengthen your preparation.",
+    "benefit3Title": "Writing and translation support",
+    "benefit3Text": "Prepare for descriptive English tasks with focused writing, summary and translation resources.",
+    "featuredTitle": "Complete District Court preparation collection",
+    "featuredText": "Explore the complete collection of ten e-books covering Arithmetic, General Knowledge and English.",
+    "featuredButton": "Get complete collection",
+    "aboutTitle": "About COURTPREP ODISHA",
+    "aboutText": "COURTPREP ODISHA is an independent educational initiative offering organised digital study materials for competitive examination aspirants. The materials are not official publications and are not affiliated with any District Court or recruitment authority.",
+    "closingTitle": "Start your preparation with a clear plan",
+    "closingText": "Browse the book details and sample pages, compare individual titles and subject packages, and choose the study materials that match your preparation needs.",
+    "closingButton": "Explore all e-books"
+  }
 }
