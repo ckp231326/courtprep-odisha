@@ -124,7 +124,8 @@ function renderPackages(){
     : '<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+(p.id==="PKG-ALL"?"COMPLETE COLLECTION":esc(p.title.toUpperCase()))+'</span><span class="cvvol">'+(p.items||[]).length+' E-BOOKS</span></div>';
   const individualTotal=included.reduce((sum,book)=>sum+Number(book.price||0),0);
   const saving=individualTotal-Number(p.price||0);
-  const savingHtml=!isFree&&saving>0?'<div class="package-saving">SAVE '+money(saving)+' vs individual prices</div>':"";
+  const savingPercent=individualTotal>0?Math.round((saving/individualTotal)*100):0;
+  const savingHtml=!isFree&&saving>0?'<div class="package-saving">SAVE '+money(saving)+' · '+savingPercent+'% LESS</div>':"";
   const packageTag=p.id==="PKG-ALL"?'<div class="package-tag">MOST COMPLETE · BEST PACKAGE VALUE</div>':"";
   el.innerHTML=coverHtml+packageTag+'<h3>'+esc(p.title)+'</h3><p class="desc">'+esc(p.description||"Includes "+included.length+" e-books.")+'</p><div class="price-row"><div><div class="package-price">'+(isFree?"FREE":money(p.price))+'</div><div class="meta">Package price</div>'+savingHtml+'</div><a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">'+(isFree?"Get Free Access":"Purchase Package")+'</a></div>';
   grid.appendChild(el);
@@ -159,8 +160,9 @@ function applyHomepage(home,products,packages){
    const included=(all.items||[]).map(id=>(products||[]).find(book=>book.id===id)).filter(Boolean);
    const individualTotal=included.reduce((sum,book)=>sum+Number(book.price||0),0);
    const saving=individualTotal-Number(all.price||0);
-   setHomeText("featuredSavings",saving>0?"Save "+money(saving)+" vs buying all books separately":"All 10 books in one package");
-   setHomeText("mobileCollectionPrice",money(all.price)+" · "+(saving>0?"Save "+money(saving):"All 10 books"));
+   const savingPercent=individualTotal>0?Math.round((saving/individualTotal)*100):0;
+   setHomeText("featuredSavings",saving>0?"Save "+money(saving)+" · "+savingPercent+"% less than buying separately":"All 10 books in one package");
+   setHomeText("mobileCollectionPrice",money(all.price)+" · "+(saving>0?"Save "+savingPercent+"%":"All 10 books"));
    const href=CHECKOUT_URL+"?item="+encodeURIComponent(all.id);
    const btn=document.getElementById("homeFeaturedButton");
    if(btn)btn.href=href;
