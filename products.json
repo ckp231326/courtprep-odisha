@@ -148,27 +148,27 @@
   "packages": [
     {
       "id": "PKG-ARI",
-      "title": "Arithmetic Complete Package",
+      "title": "Arithmetic Complete E-Book Package",
       "items": [
         "ARI-01",
         "ARI-02"
       ],
       "price": 399,
-      "description": "Both Arithmetic volumes."
+      "description": "Includes both Arithmetic e-books: previous-year questions from 2021–2025 and a step-by-step concepts, formulas and practice guide."
     },
     {
       "id": "PKG-GK",
-      "title": "GK Complete Package",
+      "title": "General Knowledge Complete E-Book Package",
       "items": [
         "GK-01",
         "GK-02"
       ],
       "price": 399,
-      "description": "Complete GK guide plus solved previous-year questions."
+      "description": "Includes an Odisha-focused General Knowledge and Current Affairs guide plus solved Odisha District Court GK previous-year questions from 2016–2025."
     },
     {
       "id": "PKG-ENG",
-      "title": "English Complete Package",
+      "title": "English Complete E-Book Package",
       "items": [
         "ENG-01",
         "ENG-02",
@@ -178,11 +178,11 @@
         "ENG-06"
       ],
       "price": 499,
-      "description": "All six English volumes: PYQs, essay, letter, summary and both translation directions."
+      "description": "Includes all six English e-books: previous-year papers, essay writing, letter and application writing, summary and précis writing, and both Odia–English translation directions."
     },
     {
       "id": "PKG-ALL",
-      "title": "Complete District Court Collection",
+      "title": "Complete Odisha District Court Exam E-Book Collection",
       "items": [
         "ARI-01",
         "ARI-02",
@@ -196,7 +196,7 @@
         "ENG-06"
       ],
       "price": 799,
-      "description": "All ten e-books across Arithmetic, General Knowledge and English."
+      "description": "Includes all 10 e-books across Arithmetic, General Knowledge and English for Odisha District Court recruitment exams, bringing together previous-year papers, concept guides, descriptive English and translation practice."
     }
   ],
   "home": {
