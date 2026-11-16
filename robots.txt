@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ckp231326.github.io/courtprep-odisha/sitemap.xml
