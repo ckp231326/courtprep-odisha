@@ -91,6 +91,29 @@ footer{background:#0e2136;color:#dce6f0;padding:34px 0 25px}.foot{display:grid;g
 <script>
 let catalogue=null,staticCatalogue=null,activeCategory="All";
 const CHECKOUT_URL="https://script.google.com/macros/s/AKfycbydzZ98cww_5f3c7zrUngSTwPQzcgyRvX6YE4WUwsQ1dm5sLywcEQOPbVx6LkzrMfQ0/exec";
+const CLICK_ID_KEYS=["gclid","gbraid","wbraid"];
+function captureAdClickIds(){
+ try{
+  const incoming=new URLSearchParams(window.location.search);
+  CLICK_ID_KEYS.forEach(key=>{const value=incoming.get(key);if(value)sessionStorage.setItem("cp_"+key,value);});
+ }catch(e){}
+}
+function checkoutUrl(query){
+ const url=new URL(CHECKOUT_URL);
+ if(query) new URLSearchParams(query).forEach((value,key)=>url.searchParams.set(key,value));
+ try{CLICK_ID_KEYS.forEach(key=>{const value=sessionStorage.getItem("cp_"+key);if(value)url.searchParams.set(key,value);});}catch(e){}
+ return url.toString();
+}
+function decorateCheckoutLinks(){
+ document.querySelectorAll('a[href^="'+CHECKOUT_URL+'"]').forEach(a=>{
+  try{
+   const old=new URL(a.href);
+   a.href=checkoutUrl(old.searchParams);
+  }catch(e){}
+ });
+}
+captureAdClickIds();
+decorateCheckoutLinks();
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function money(n){return "₹"+Number(n).toLocaleString("en-IN")}
 function askLink(subject,body){return "mailto:ckpbpo@gmail.com?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body)}
@@ -122,7 +145,7 @@ function renderProducts(){
   const isFree=Number(p.price)===0;
   const priceText=isFree?"FREE":money(p.price);
   const actionText=isFree?"Get Free Access":"Buy Now";
-  el.innerHTML=cover+'<h3>'+esc(p.title)+'</h3><div class="meta">'+(Number(p.pages)>0?p.pages+' PDF pages':'Digital resource')+' · '+esc(p.category)+'</div><p class="desc">'+esc(p.description)+'</p>'+productDetails(p)+'<div class="price-row"><div><div class="price">'+priceText+'</div><div class="meta">Price</div></div><div class="product-actions">'+(p.sampleUrl?'<a class="btn outline" href="'+esc(p.sampleUrl)+'" target="_blank" rel="noopener">Sample pages</a>':'')+'<a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">'+actionText+'</a></div></div>';
+  el.innerHTML=cover+'<h3>'+esc(p.title)+'</h3><div class="meta">'+(Number(p.pages)>0?p.pages+' PDF pages':'Digital resource')+' · '+esc(p.category)+'</div><p class="desc">'+esc(p.description)+'</p>'+productDetails(p)+'<div class="price-row"><div><div class="price">'+priceText+'</div><div class="meta">Price</div></div><div class="product-actions">'+(p.sampleUrl?'<a class="btn outline" href="'+esc(p.sampleUrl)+'" target="_blank" rel="noopener">Sample pages</a>':'')+'<a class="btn" href="'+checkoutUrl({item:p.id})+'" target="_blank" rel="noopener">'+actionText+'</a></div></div>';
   grid.appendChild(el);
  });
 }
@@ -135,7 +158,7 @@ function renderFreeCourses(){
  freeItems.forEach(p=>{
   const el=document.createElement("article");el.className="card";
   const cover=p.cover?'<img class="book-cover" src="'+esc(p.cover)+'" alt="'+esc(p.title)+' cover" loading="lazy">':'<div class="cover"><span class="mini">COURTPREP ODISHA</span><span class="cvtitle">'+esc(coverTitle(p))+'</span><span class="cvvol">'+esc(p.id)+'</span></div>';
-  el.innerHTML=cover+'<h3>'+esc(p.title)+'</h3><div class="meta">'+(Number(p.pages)>0?p.pages+' PDF pages':'Digital resource')+' · '+esc(p.category)+'</div><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div class="price">FREE</div><a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">Get Free Access</a></div>';
+  el.innerHTML=cover+'<h3>'+esc(p.title)+'</h3><div class="meta">'+(Number(p.pages)>0?p.pages+' PDF pages':'Digital resource')+' · '+esc(p.category)+'</div><p class="desc">'+esc(p.description)+'</p><div class="price-row"><div class="price">FREE</div><a class="btn" href="'+checkoutUrl({item:p.id})+'" target="_blank" rel="noopener">Get Free Access</a></div>';
   grid.appendChild(el);
  });
 }
@@ -156,7 +179,7 @@ function renderPackages(){
   const savingPercent=individualTotal>0?Math.round((saving/individualTotal)*100):0;
   const savingHtml=!isFree&&saving>0?'<div class="package-saving">SAVE '+money(saving)+' · '+savingPercent+'% LESS</div>':"";
   const packageTag=p.id==="PKG-ALL"?'<div class="package-tag">MOST COMPLETE · BEST PACKAGE VALUE</div>':"";
-  el.innerHTML=coverHtml+packageTag+'<h3>'+esc(p.title)+'</h3><p class="desc">'+esc(p.description||"Includes "+included.length+" e-books.")+'</p><div class="price-row"><div><div class="package-price">'+(isFree?"FREE":money(p.price))+'</div><div class="meta">Package price</div>'+savingHtml+'</div><a class="btn" href="'+CHECKOUT_URL+'?item='+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">'+(isFree?"Get Free Access":"Purchase Package")+'</a></div>';
+  el.innerHTML=coverHtml+packageTag+'<h3>'+esc(p.title)+'</h3><p class="desc">'+esc(p.description||"Includes "+included.length+" e-books.")+'</p><div class="price-row"><div><div class="package-price">'+(isFree?"FREE":money(p.price))+'</div><div class="meta">Package price</div>'+savingHtml+'</div><a class="btn" href="'+checkoutUrl({item:p.id})+'" target="_blank" rel="noopener">'+(isFree?"Get Free Access":"Purchase Package")+'</a></div>';
   grid.appendChild(el);
  });
 }
@@ -192,7 +215,7 @@ function applyHomepage(home,products,packages){
    const savingPercent=individualTotal>0?Math.round((saving/individualTotal)*100):0;
    setHomeText("featuredSavings",saving>0?"Save "+money(saving)+" · "+savingPercent+"% less than buying separately":"All 10 books in one package");
    setHomeText("mobileCollectionPrice",money(all.price)+" · "+(saving>0?"Save "+savingPercent+"%":"All 10 books"));
-   const href=CHECKOUT_URL+"?item="+encodeURIComponent(all.id);
+   const href=checkoutUrl({item:all.id});
    const btn=document.getElementById("homeFeaturedButton");
    if(btn)btn.href=href;
    const mobileBtn=document.getElementById("mobileCollectionButton");
